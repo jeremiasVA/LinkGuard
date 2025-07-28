@@ -1,5 +1,6 @@
 from LinkGuard.Negocio.DeteccionEnlaces.GestorEnlace import GestorEnlace
-from LinkGuard.Negocio.GestionUsuarios.Usuario import UsuarioProtegido, UsuarioEmergencia
+from LinkGuard.Negocio.GestionUsuarios.UsuarioEmergencia import UsuarioEmergencia
+from LinkGuard.Negocio.GestionUsuarios.UsuarioProtegido import UsuarioProtegido
 from LinkGuard.Negocio.GestionHistorial.Enlace import Enlace
 
 def mostrarMenuPrincipal():

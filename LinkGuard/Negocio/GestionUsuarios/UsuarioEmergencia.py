@@ -6,6 +6,5 @@ class UsuarioEmergencia(Usuario):
         super().__init__(nombre, telefono, correo)
         self.fechaReg = datetime.now()
     
-    def recibirAlerta(mensaje):
-        print("Usuario de Emergencia recibio una alerta:")
-        print(mensaje)
+    def recibirAlerta(self, mensaje):
+        print("\nUsuario de Emergencia recibio una alerta:", mensaje)
