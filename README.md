@@ -12,11 +12,11 @@ Desarrollada en **Python** y funciona por consola.
 - Eliminar usuario de emergencia
 - Ver historial de enlaces
 
-Tecnologías
+## Tecnologías
 
-Lenguaje: Python 3.x
-Tipo: Aplicación de consola
-Arquitectura: Estructura modular en capas
+- Lenguaje: Python
+- Tipo: Aplicación de consola
+- Arquitectura: Estructura modular en capas
 
 ## Arquitectura del Proyecto
 ```
@@ -26,8 +26,17 @@ LinkGuard/
 └── Presentacion/
     └── main.py
 ```
+La aplicación sigue una arquitectura de tres capas:
 
-## Ejecución
+- Datos: Manejo de información y almacenamiento
+- Negocio: Procesamiento de la lógica principal
+- Presentación: Interfaz de usuario y control de flujo
+
+## Instalación y Ejecución
+Requisitos Previos
+- Python 3.7 o superior
+
+Ejecución
 ```bash
 python -m LinkGuard.Presentacion.main
 ```
