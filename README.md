@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🛡️ LinkGuard ⚡
+# 🛡️ LinkGuard 🔒
 
-*Protección inteligente contra enlaces maliciosos*
+*Protección contra enlaces maliciosos*
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)
 [![Security](https://img.shields.io/badge/Security-First-green.svg)]()
