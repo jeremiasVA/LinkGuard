@@ -36,8 +36,9 @@ class GestorEnlace:
     def marcarEnlace(self, url, estado):
         registro = self.enlaceEnHistorial(url)
         if registro:
-            (enlace, _) = registro
+            (enlace, reporte) = registro
             enlace.setEstado(estado)
+            reporte.esMalicioso = estado == "Inseguro"
 
     def eliminarEnlace(self, enlace):
         self.historialDeteccion.eliminarEnlace(enlace)
