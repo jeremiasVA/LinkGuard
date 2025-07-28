@@ -12,6 +12,12 @@ Desarrollada en **Python** y funciona por consola.
 - Eliminar usuario de emergencia
 - Ver historial de enlaces
 
+Tecnologías
+
+Lenguaje: Python 3.x
+Tipo: Aplicación de consola
+Arquitectura: Estructura modular en capas
+
 ## Arquitectura del Proyecto
 ```
 LinkGuard/
