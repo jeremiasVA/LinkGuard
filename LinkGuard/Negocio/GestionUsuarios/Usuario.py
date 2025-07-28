@@ -1,3 +1,4 @@
+from LinkGuard.Negocio.DeteccionEnlaces.GestorEnlace import GestorEnlace
 from LinkGuard.Negocio.GestionUsuarios.RegistroContacto import RegistroContacto
 from datetime import datetime
 
