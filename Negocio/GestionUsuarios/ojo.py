@@ -20,7 +20,8 @@ class Usuario:
         self.telefono = telefono
     
     def setCorreo(self, correo):
-        self.correo = correo
+        self.correo = correo 
+        
 class UsuarioEmergencia(Usuario):
     def __init__(self, nombre, telefono, correo):
         super().__init__(nombre, telefono, correo)
@@ -29,6 +30,7 @@ class UsuarioEmergencia(Usuario):
     def recibirAlerta(mensaje):
         print("Usuario de Emergencia recibio una alerta:")
         print(mensaje)
+        
 class UsuarioProtegido(Usuario):
     def __init__(self, nombre, telefono, correo):
         super().__init__(nombre, telefono, correo)
