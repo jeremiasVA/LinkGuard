@@ -12,7 +12,7 @@ Desarrollada en **Python** y funciona por consola.
 - Eliminar usuario de emergencia
 - Ver historial de enlaces
 
-## Estructura del Proyecto
+## Arquitectura del Proyecto
 ```
 LinkGuard/
 ├── Datos/
