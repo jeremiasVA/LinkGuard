@@ -37,3 +37,11 @@ class UsuarioProtegido(Usuario):
     
     def tieneContactoEmergencia(self):
         return len(self.regContacto.usuariosEm) > 0
+ def marcarEnlaceSeguro(self, url):
+        self.gestor.marcarEnlace(url, "Seguro")
+    
+    def marcarEnlaceInseguro(self, url):
+        self.gestor.marcarEnlace(url, "Inseguro")
+    
+    def eliminarEnlace(self, url):
+        self.gestor.eliminarEnlace(url)
