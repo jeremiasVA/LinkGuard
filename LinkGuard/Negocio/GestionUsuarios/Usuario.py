@@ -1,3 +1,6 @@
+from LinkGuard.Negocio.GestionUsuarios.RegistroContacto import RegistroContacto
+from datetime import datetime
+
 class Usuario:
     def __init__(self, nombre, telefono, correo):
         self.nombre = nombre
