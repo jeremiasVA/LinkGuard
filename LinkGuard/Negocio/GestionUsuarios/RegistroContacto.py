@@ -23,7 +23,7 @@ class RegistroContacto:
                 print("Usuario de emergencia eliminado")
                 return
         print("Usuario no encontrado")
-        
+
     def getContactosEmergencia(self):
         return self.usuariosEm
     
@@ -38,3 +38,22 @@ class RegistroContacto:
             if userEm.getTelefono() == telefono:
                 return userEm
         return None
+    
+    def buscarContactoPorCorreo(self, correo):
+        for userEm in self.usuariosEm:
+            if userEm.getCorreo() == correo:
+                return userEm
+        return None
+    
+    def notificarUsuariosEmergencia(self, reporte, usuarioProtegido):
+        for user in self.usuariosEm:
+            mensaje = (
+                f"\nNotificando a: {user.getNombre()} ({user.getCorreo()})\n"
+                f"El usuario {usuarioProtegido} ha intentado entrar a un enlace malicioso.\n"
+                f"Se ha bloqueado el acceso al enlace.\n"
+                f"Mensaje: {reporte.mensaje}\n"
+                f"Tipo de amenaza: {reporte.tipo}\n"
+                f"Motivo: {reporte.motivo}\n"
+                f"Fecha: {reporte.fechaAnalisis.strftime('%Y-%m-%d %H:%M:%S')}\n"
+            )
+            user.recibirAlerta(mensaje)
