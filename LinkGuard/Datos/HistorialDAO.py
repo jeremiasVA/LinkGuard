@@ -4,3 +4,6 @@ class HistorialDAO:
 
     def agregarRegistro(self, enlace, reporte):
         self.historial.append((enlace, reporte))
+        
+    def obtenerHistorial(self):
+        return self.historial
