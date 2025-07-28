@@ -1,4 +1,13 @@
-# LinkGuard
+<div align="center">
+
+# 🛡️ LinkGuard ⚡
+
+*Protección inteligente contra enlaces maliciosos*
+
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)
+[![Security](https://img.shields.io/badge/Security-First-green.svg)]()
+
+</div>
 
 **LinkGuard** es una aplicación móvil que monitorea enlaces en segundo plano para detectar y bloquear enlaces maliciosos, protegiendo al usuario final de amenazas web.
 
