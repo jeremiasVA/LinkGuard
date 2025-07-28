@@ -29,3 +29,11 @@ class UsuarioEmergencia(Usuario):
     def recibirAlerta(mensaje):
         print("Usuario de Emergencia recibio una alerta:")
         print(mensaje)
+class UsuarioProtegido(Usuario):
+    def __init__(self, nombre, telefono, correo):
+        super().__init__(nombre, telefono, correo)
+        self.gestor = GestorEnlace()
+        self.regContacto = RegistroContacto()
+    
+    def tieneContactoEmergencia(self):
+        return len(self.regContacto.usuariosEm) > 0
