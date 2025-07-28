@@ -1,9 +1,11 @@
+from LinkGuard.Datos.UsuarioDAO import UsuarioDAO
 from datetime import datetime
 
 class RegistroContacto:
     def __init__(self):
         self.fechaRegistro = datetime.now()
         self.usuariosEm = []
+        self.usuarioDAO = UsuarioDAO()
 
     def agregarUsuarioEmergencia(self, usuario):
         self.usuariosEm.append(usuario)
@@ -11,6 +13,7 @@ class RegistroContacto:
             print("El usuario de emergencia ya existe, agregue uno nuevo o modifique el contacto")
             return
         print("Se ha registrado al usuario de Emergencia: ", usuario.getNombre())
+        self.usuarioDAO.agregarUsuario(usuario)
     
     def eliminarUsuarioEmergencia(self, usuario):
         for userEm in self.usuariosEm:

@@ -1,4 +1,4 @@
-from LinkGuard.Negocio.DeteccionEnlaces.GestorEnlace import GestorEnlace
+from LinkGuard.Datos.UsuarioDAO import UsuarioDAO
 from LinkGuard.Negocio.GestionUsuarios.UsuarioEmergencia import UsuarioEmergencia
 from LinkGuard.Negocio.GestionUsuarios.UsuarioProtegido import UsuarioProtegido
 from LinkGuard.Negocio.GestionHistorial.Enlace import Enlace
@@ -181,7 +181,9 @@ def gestionarEnlace(registro, usuarioProtegido):
             print("Opcion invalida")
 
 def main():
+    usuarioDAO = UsuarioDAO()
     usuarioProtegido = UsuarioProtegido("Jaimito", 77426434, "jaimigomez3@gmail.com")
+    usuarioDAO.agregarUsuario(usuarioProtegido)
     while True:
         mostrarMenuPrincipal()
         opcion = input("Selecciona una opcion: ")
