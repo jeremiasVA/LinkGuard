@@ -29,7 +29,7 @@ La aplicación sigue una arquitectura de tres capas:
 - Tipo: Aplicación de consola
 - Arquitectura: Estructura modular en capas
 - 
-## Instalación y Ejecución
+## Requisitos y Ejecución
 Requisitos Previos
 - Python 3.7 o superior
 
