@@ -23,3 +23,18 @@ class RegistroContacto:
                 print("Usuario de emergencia eliminado")
                 return
         print("Usuario no encontrado")
+        
+    def getContactosEmergencia(self):
+        return self.usuariosEm
+    
+    def validarContactoExistente(self, telefono, correo):
+        for userEm in self.usuariosEm:
+            if userEm.getTelefono()==telefono and userEm.getCorreo()==correo:
+                return True
+        return False
+    
+    def buscarContactoPorTelefono(self, telefono):
+        for userEm in self.usuariosEm:
+            if userEm.getTelefono() == telefono:
+                return userEm
+        return None
