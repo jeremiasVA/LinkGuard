@@ -2,21 +2,12 @@
 
 **LinkGuard** es una aplicación móvil que monitorea enlaces en segundo plano para detectar y bloquear enlaces maliciosos, protegiendo al usuario final de amenazas web.
 
-## Tecnología
-Desarrollada en **Python** y funciona por consola.
-
 ## Funcionalidades
 - Detectar, analizar y bloquear enlaces inseguros
 - Registrar usuario de emergencia
 - Actualizar datos del usuario de emergencia
 - Eliminar usuario de emergencia
 - Ver historial de enlaces
-
-## Tecnologías
-
-- Lenguaje: Python
-- Tipo: Aplicación de consola
-- Arquitectura: Estructura modular en capas
 
 ## Arquitectura del Proyecto
 ```
@@ -32,6 +23,12 @@ La aplicación sigue una arquitectura de tres capas:
 - Negocio: Procesamiento de la lógica principal
 - Presentación: Interfaz de usuario y control de flujo
 
+## Desarrollo
+
+- Lenguaje: Python
+- Tipo: Aplicación de consola
+- Arquitectura: Estructura modular en capas
+- 
 ## Instalación y Ejecución
 Requisitos Previos
 - Python 3.7 o superior
